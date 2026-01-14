@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
+  <h1>Derd is God</h1>
   <p>
-    Congratulations! You have successfully set up your Vue.js project.
+    This is a Vue.js application.
   </p>
 </template>
 
