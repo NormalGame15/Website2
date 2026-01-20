@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#020617]">
+  <div class="min-h-screen bg-[#020617] text-white font-sans selection:bg-blue-500">
     <nav class="flex items-center justify-between px-8 py-4 bg-[#0f172a]/80 backdrop-blur-md sticky top-0 z-50">
       <div class="flex items-center gap-8">
         <div class="flex items-center gap-2">
@@ -11,7 +11,7 @@
         <div class="hidden md:flex gap-6 text-sm text-gray-400">
           <RouterLink to="/" class="text-white hover:text-blue-400" href="#">หน้าหลัก</RouterLink>
           <RouterLink to="/games" class="text-white hover:text-blue-400" href="#">รายการเกม</RouterLink>
-          <RouterLink to="/gametype" class="text-white hover:text-blue-400" href="#">หมวดหมู่</RouterLink>
+          <RouterLink to="/gamestype" class="text-white hover:text-blue-400" href="#">หมวดหมู่</RouterLink>
           <a href="#" class="hover:text-white transition">ช่วยเหลือ</a>
           <a href="#" class="hover:text-white transition">ติดต่อเรา</a>
         </div>
