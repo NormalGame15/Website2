@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen bg-[#020617] text-white font-sans selection:bg-blue-500">
-
     <main class="max-w-7xl mx-auto mt-8 px-6">
       <div class="relative overflow-hidden rounded-3xl aspect-21/9 flex items-center shadow-2xl">
         <div class="absolute inset-0 bg-cover bg-center z-0 scale-105" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070');"></div>
