@@ -11,7 +11,7 @@
         <div class="hidden md:flex gap-6 text-sm text-gray-400">
           <RouterLink to="/" class="text-white hover:text-blue-400" href="#">หน้าหลัก</RouterLink>
           <RouterLink to="/games" class="text-white hover:text-blue-400" href="#">รายการเกม</RouterLink>
-          <a href="#" class="hover:text-white transition">หมวดหมู่</a>
+          <RouterLink to="/gametype" class="text-white hover:text-blue-400" href="#">หมวดหมู่</RouterLink>
           <a href="#" class="hover:text-white transition">ช่วยเหลือ</a>
           <a href="#" class="hover:text-white transition">ติดต่อเรา</a>
         </div>
