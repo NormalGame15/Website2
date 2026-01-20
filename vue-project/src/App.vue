@@ -1,5 +1,4 @@
 <template>
-  <h1 class="text-9xl text-red-500 bg-yellow-400">TEST TAILWIND</h1>
   <div class="min-h-screen bg-[#020617] text-white font-sans selection:bg-blue-500">
     <nav class="flex items-center justify-between px-8 py-4 bg-[#0f172a]/80 backdrop-blur-md sticky top-0 z-50">
       <div class="flex items-center gap-8">
