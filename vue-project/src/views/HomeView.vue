@@ -1,7 +1,7 @@
 <script setup>
   import bgImage from '/images/29b3afb604a116aab29b778e4862903a4af079ca.jpg';
   import bgImage2 from '/images/4ad9beb9066b7048e11201e1ecdcb3ae980dfe0b.jpg';
-// คุณสามารถนำเข้าข้อมูลสินค้ามาไว้ที่นี่ได้ในอนาคต
+
 const products = [
   { id: 1, name: 'Gaming Mouse', image: '/images/5d2e889d7c1f775fa728169b075292466a6b0994.png' },
   { id: 2, name: 'Controller Gaming', image: '/images/2bee5b186c355022caf2c7883a22aecd79196a8b.png' },
@@ -70,9 +70,7 @@ const services = [
           </button>
         </div>
       </div>
-
     </section>
-
   </div>
 </template>
 
