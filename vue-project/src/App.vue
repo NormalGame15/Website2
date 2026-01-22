@@ -3,7 +3,9 @@
     <nav class="flex items-center justify-between px-8 py-4 bg-[#0f172a]/80 backdrop-blur-md sticky top-0 z-50">
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-4">
-          <img src="/images/b09d77f7dcd3d859774175ba8a23f0ba96e2fd88.png" class="rounded-lg p-1 w-25 h-20" alt="">
+          <RouterLink to="/">
+            <img src="/images/b09d77f7dcd3d859774175ba8a23f0ba96e2fd88.png" class="rounded-lg p-1 w-21 h-14"/>
+          </RouterLink>
         </div>
         <div class="relative gap-4">
           <input type="text" placeholder="Search..." class="bg-[#1e293b] border border-gray-700 rounded-full px-4 py-1.5 text-sm w-64 focus:outline-none focus:border-blue-500">
@@ -15,7 +17,7 @@
           <RouterLink to="/" class="text-white hover:text-blue-400" href="#">Home</RouterLink>
           <RouterLink to="/games" class="text-white hover:text-blue-400" href="#">Product Details</RouterLink>
           <RouterLink to="/gamestype" class="text-white hover:text-blue-400" href="#">About</RouterLink>
-          <a href="#" class="hover:text-white transition">Contact Us</a>
+          <RouterLink to="/aboutus" class="text-white hover:text-blue-400" href="#">Contact Us</RouterLink>
         </div>
         <div class="flex items-center gap-2 border-l border-gray-700 pl-4">
           <div class="text-right">

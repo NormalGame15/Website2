@@ -10,16 +10,15 @@ const products = [
 ];
 
 const services = [
-  { title: 'Shipping', desc: 'Free shipping nationwide for purchases over 2 million Kip.', icon: '🚚' },
-  { title: 'Claim', desc: 'Easy product claims, within 7 days.', icon: '🔄' },
-  { title: 'Faster', desc: 'Fast service Quick response 24-hour service.', icon: '🕒' },
-  { title: 'Secure payment', desc: 'Secure payment with international standards.', icon: '🛡️' },
+  { title: 'Shipping', desc: 'Free shipping nationwide for purchases over 2 million Kip.', name:'Icon1', image: '/images/fa54b3a581f73988d2e2e2b906dc962f60a14eae.png' },
+  { title: 'Claim', desc: 'Easy product claims, within 7 days.', name:'Icon2', image: '/images/053320bfb3449edbd09f087a1d7402b41512fb2a.png' },
+  { title: 'Faster', desc: 'Fast service Quick response 24-hour service.', name:'Icon3', image: '/images/1c2318a73f2c5efd1e87ff84ac28a1ab6e44a66e.png' },
+  { title: 'Secure payment', desc: 'Secure payment with international standards.', name:'Icon3', image: '/images/7558573b875da9b40cf63572e041303f0c5999b4.png'},
 ];
 </script>
 
 <template>
   <div class="bg-[#020617] text-white min-h-screen font-sans overflow-x-hidden">
-
     <section :style="{ backgroundImage: `url(${bgImage})` }" class="min-h-full font-sans overflow-x-hidden text-white bg-center bg-no-repeat bg-cover mx-auto px-27 py-16 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 space-y-7">
         <h1 class="text-5xl md:text-6xl font-bold text-blue-500">Gaming Gears</h1>
@@ -41,7 +40,7 @@ const services = [
           class="bg-[#0f172a] border border-slate-900 rounded-3xl p-8 flex justify-between items-center hover:border-blue-500/50 transition-all duration-300 group">
           <div class="space-y-9">
             <h3 class="text-3xl font-semibold text-blue-600 leading-tight">{{ item.name }}</h3>
-            <button class="bg-[#3373B1] border-slate-10 p-8 from-purple-600 to-pink-600 px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#7700A5] hover:scale-110 transition-transform duration-500">Shop now</button>
+            <button class="bg-[#ffffff] border-slate-10 p-8 text-black from-purple-600 to-pink-600 px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#3373B1] hover:text-white hover:scale-110 transition-transform duration-500">Shop now</button>
           </div>
           <div class="w-1/2 flex justify-end left-23">
             <img :src="item.image" :alt="item.name" class="w-40 group-hover:scale-110 transition-transform duration-500" />
@@ -58,16 +57,16 @@ const services = [
     
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div v-for="service in services" :key="service.title" class="bg-black/40 backdrop-blur-md border border-white/5 p-8 rounded-2xl flex flex-col items-center text-center hover:bg-black/60 transition">
-          <div class="text-4xl mb-6">{{ service.icon }}</div>
-            <h4 class="text-xl font-semibold text-blue-400 mb-4">{{ service.title }}</h4>
-            <p class="text-gray-500 text-sm leading-relaxed">{{ service.desc }}</p>
+          <div class="text-4xl mb-6">
+            <img :src="service.image" :alt="service.name" class="w-40">
+          </div>
+          <h4 class="text-xl font-semibold text-blue-400 mb-4">{{ service.title }}</h4>
+          <p class="text-gray-500 text-sm leading-relaxed">{{ service.desc }}</p>
           </div>
         </div>
 
         <div class="flex justify-center mt-12">
-          <button class="bg-linear-to-r from-purple-600 to-pink-600 px-10 py-2 rounded-lg text-sm font-semibold">
-          Find with us
-          </button>
+          <button class="bg-[#3373B1] text-white px-10 py-2 rounded-lg text-sm font-semibold hover:bg-[#7700A5] hover:text-black hover:font-bold">Find with us</button>
         </div>
       </div>
     </section>
