@@ -1,14 +1,14 @@
 <template>
-  <div class="min-h-screen bg-[#020617] text-white font-sans selection:bg-blue-500">
-    <nav class="flex items-center justify-between px-8 py-4 bg-[#0f172a]/80 backdrop-blur-md sticky top-0 z-50">
+  <div class="min-h-screen bg-[#2d3661] text-white font-sans selection:bg-blue-500">
+    <nav class="flex items-center justify-between px-8 py-4 bg-[#091322]/80 backdrop-blur-md sticky top-0 z-50 overflow-x-hidden">
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-4">
           <RouterLink to="/">
-            <img src="/images/b09d77f7dcd3d859774175ba8a23f0ba96e2fd88.png" class="rounded-lg p-1 w-21 h-14"/>
+            <img src="/images/b09d77f7dcd3d859774175ba8a23f0ba96e2fd88.png" class="relative left-10 rounded-lg p-1 w-21 h-14"/>
           </RouterLink>
         </div>
         <div class="relative gap-4">
-          <input type="text" placeholder="Search..." class="bg-[#1e293b] border border-gray-700 rounded-full px-4 py-1.5 text-sm w-64 focus:outline-none focus:border-blue-500">
+          <input type="text" placeholder="Search..." class="relative left-10 bg-[#111b29] border border-gray-700 rounded-full px-4 py-1.5 text-sm w-70 focus:outline-none focus:border-blue-500">
         </div>
       </div>
 

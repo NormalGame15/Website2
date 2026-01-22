@@ -18,14 +18,14 @@ const services = [
 </script>
 
 <template>
-  <div class="bg-[#020617] text-white min-h-screen font-sans overflow-x-hidden">
+  <div class="bg-[#0d1744] text-white min-h-screen font-sans overflow-x-hidden">
     <section :style="{ backgroundImage: `url(${bgImage})` }" class="min-h-full font-sans overflow-x-hidden text-white bg-center bg-no-repeat bg-cover mx-auto px-27 py-16 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 space-y-7">
-        <h1 class="text-5xl md:text-6xl font-bold text-blue-500">Gaming Gears</h1>
-        <p class="text-gray-400 max-w-md leading-relaxed">
+        <h1 class="relative text-5xl md:text-6xl font-bold text-blue-500 bottom-25 left-7">Gaming Gears</h1>
+        <p class="relative text-gray-400 max-w-md leading-relaxed left-4 bottom-10">
           containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <button class="bg-[#3373B1] border-slate-10 rounded-3xl p-4 flex px-10 hover:bg-[#7700A5] transition-all duration-300">Learn More</button>
+        <button class="relative left-35 bg-[#3373B1] border-slate-10 rounded-3xl p-4 flex px-10 hover:bg-[#7700A5] transition-all duration-300">Learn More</button>
       </div>
       <div class="md:w-1/2 mt-12 md:mt-1 relative flex justify-end left-12">
         <div class="absolute inset-0 bg-blue-600/10 blur-[100px] rounded-full"></div>
@@ -33,14 +33,16 @@ const services = [
       </div>
     </section>
 
-    <section class="container mx-auto px-6 py-20">
+    <section class="container mx-auto px-6 py-20 overflow-x-hidden">
       <h2 class="text-3xl font-bold text-center text-blue-400 mb-16">Our product</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div v-for="item in products" :key="item.id" 
           class="bg-[#0f172a] border border-slate-900 rounded-3xl p-8 flex justify-between items-center hover:border-blue-500/50 transition-all duration-300 group">
           <div class="space-y-9">
-            <h3 class="text-3xl font-semibold text-blue-600 leading-tight">{{ item.name }}</h3>
-            <button class="bg-[#ffffff] border-slate-10 p-8 text-black from-purple-600 to-pink-600 px-6 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#3373B1] hover:text-white hover:scale-110 transition-transform duration-500">Shop now</button>
+            <h3 class="text-3xl font-semibold text-blue-600 leading-tight p-2 md:w-1/0 space-y-3">{{ item.name }}</h3>
+            <button class="bg-[#ffffff] items-center justify-center border-slate-10 p-10 text-black from-purple-600 to-pink-600 px-10 py-2 rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#3373B1] hover:text-white hover:scale-110 transition-transform duration-500">
+              <img src="/images/6207f15b3c5cd8af3ac23f5ca07bf078aba1c333.png" class="relative right-5 top-2.5 w-5 h-5"> <p class="relative left-2 bottom-2  ">Buy Now</p>
+            </button>
           </div>
           <div class="w-1/2 flex justify-end left-23">
             <img :src="item.image" :alt="item.name" class="w-40 group-hover:scale-110 transition-transform duration-500" />
@@ -49,7 +51,7 @@ const services = [
       </div>
     </section>
 
-    <section class="relative min-h-full overflow-hidden font-sans text-white mx-full px-6 md:px-27 py-16 flex items-center">
+    <section class="relative min-h-full overflow-hidden font-sans text-white mx-full px-6 md:px-27 py-16 flex items-center overflow-x-hidden">
       <div :style="{ backgroundImage: `url(${bgImage2})` }" class="absolute inset-0 bg-center bg-no-repeat bg-cover blur-md z-0"></div>
       <div class="absolute inset-0 bg-black/40 z-10"></div>
       <div class="container mx-auto px-6 relative z-20">
