@@ -25,7 +25,7 @@ const services = [
         <p class="relative text-gray-400 max-w-md leading-relaxed left-4 bottom-10">
           containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <button class="relative left-35 bg-[#3373B1] border-slate-10 rounded-3xl p-4 flex px-10 hover:bg-[#7700A5] transition-all duration-300">Learn More</button>
+        <button class="relative left-7 bg-[#3373B1] border-slate-10 rounded-3xl p-4 flex px-10 hover:bg-[#7700A5] transition-all duration-300">Learn More</button>
       </div>
       <div class="md:w-1/2 mt-12 md:mt-1 relative flex justify-end left-12">
         <div class="absolute inset-0 bg-blue-600/10 blur-[100px] rounded-full"></div>
