@@ -24,8 +24,10 @@
             <p class="text-xs text-gray-400">guest1768305543113</p>
             <p class="text-[10px] text-blue-400">Member</p>
           </div>
-          <div class="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path></svg>
+          <div class="w-10 h-10 bg-gray-600 hover:bg-gray-800 rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-gray-200" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
+            </svg>
           </div>
         </div>
       </div>
