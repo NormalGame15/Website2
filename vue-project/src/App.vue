@@ -1,6 +1,12 @@
+<script setup>
+import { RouterView, useRoute } from 'vue-router'
+import { computed } from 'vue'
+
+const route = useRoute()
+</script>
 <template>
   <div class="min-h-screen bg-[#2d3661] text-white font-sans selection:bg-blue-500">
-    <nav class="flex items-center justify-between px-8 py-4 bg-[#091322]/80 backdrop-blur-md sticky top-0 z-50 overflow-x-hidden">
+    <nav v-if="route.path !== '/login'" class="flex items-center justify-between px-8 py-4 bg-[#091322]/80 backdrop-blur-md sticky top-0 z-50 overflow-x-hidden">
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-4">
           <RouterLink to="/">
@@ -19,20 +25,18 @@
           <RouterLink to="/gamestype" class="text-white hover:text-blue-400" href="#">About</RouterLink>
           <RouterLink to="/aboutus" class="text-white hover:text-blue-400" href="#">Contact Us</RouterLink>
         </div>
-        <div class="flex items-center gap-2 border-l border-gray-700 pl-4">
-          <div class="text-right">
-            <p class="text-xs text-gray-400">guest1768305543113</p>
-            <p class="text-[10px] text-blue-400">Member</p>
-          </div>
-          <div class="w-10 h-10 bg-gray-600 hover:bg-gray-800 rounded-full flex items-center justify-center">
-            <svg class="w-5 h-5 text-gray-200" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
-            </svg>
+        <div class="flex  border-l border-gray-700 pl-4">
+          <div class="flex ">
+            <RouterLink to="/login" class="text-white" href="#">
+               <button class="relative left-3 font-bold bg-[#3373B1] border-slate-10 rounded-3xl p-1.5 flex px-10 hover:opacity-90 transition transform hover:-translate-y-0.5">Log In</button>
+            </RouterLink>
           </div>
         </div>
       </div>
     </nav>
 
+
     <RouterView /> 
   </div>
+  
 </template>
