@@ -25,6 +25,11 @@ const route = useRoute()
           <RouterLink to="/gamestype" class="text-white hover:text-blue-400" href="#">About</RouterLink>
           <RouterLink to="/aboutus" class="text-white hover:text-blue-400" href="#">Contact Us</RouterLink>
         </div>
+
+        <RouterLink to="/tocart">
+          <img src="/images/Screenshot_2026-03-01_232643-removebg-preview.png" class="flex w-10 h-10 rounded-full hover:transition transform hover:-translate-y-0.5 hover:scale-105 transition duration-300" >
+        </RouterLink>
+
         <div class="flex  border-l border-gray-700 pl-4">
           <div class="flex ">
             <RouterLink to="/login" class="text-white" href="#">
@@ -33,8 +38,8 @@ const route = useRoute()
           </div>
         </div>
       </div>
+      
     </nav>
-
 
     <RouterView /> 
   </div>

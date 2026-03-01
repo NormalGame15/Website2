@@ -4,6 +4,9 @@ import GamesView from '../views/ProductView.vue'
 import GamesType from '../views/AboutView.vue'
 import AboutView from '../views/ContactUsView.vue'
 import LogIn from '../views/LogIn.vue'
+import ToCrt from '../views/ToCart.vue'
+import ProductDetailView from '../views/ProductDetailView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -12,7 +15,9 @@ const router = createRouter({
     { path: '/games', component: GamesView },
     { path: '/gamestype', component: GamesType },
     { path: '/aboutus', component: AboutView },
-    { path: '/login', component: LogIn }
+    { path: '/login', component: LogIn },
+    { path: '/tocart', component: ToCrt },
+    { path: '/productdetail', component: ProductDetailView }
   ]
 })
 
@@ -22,6 +27,13 @@ const routes = [
     name: 'login',
     component: () => import('../views/LogIn.vue')
   },
+  {
+    path: '/product', 
+    name: 'ProductDetail',
+    component: ProductDetailView
+  },
 ]
+
+
 
 export default router
