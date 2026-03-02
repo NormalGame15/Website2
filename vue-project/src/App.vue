@@ -21,7 +21,7 @@ const route = useRoute()
       <div class="flex items-center gap-8">
         <div class="hidden md:flex text-sm text-gray-400 gap-8">
           <RouterLink to="/" class="text-white hover:text-blue-400" href="#">Home</RouterLink>
-          <RouterLink to="/games" class="text-white hover:text-blue-400" href="#">Product Details</RouterLink>
+          <RouterLink to="/games" class="text-white hover:text-blue-400" href="#">Products</RouterLink>
           <RouterLink to="/gamestype" class="text-white hover:text-blue-400" href="#">About</RouterLink>
           <RouterLink to="/aboutus" class="text-white hover:text-blue-400" href="#">Contact Us</RouterLink>
         </div>
